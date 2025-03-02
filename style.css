@@ -1,0 +1,48 @@
+:root{
+    --grey: rgb(102, 102, 102);
+    --lb: rgb(68, 68, 68);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    box-shadow: 2px 1px 3px darkgrey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+}
+
+h1{
+    text-align: start;
+    flex-basis: 40%;
+    color: var(--lb);
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 468px) {
+    nav{
+        
+    }
+}
+
+#navbar > ul{
+    list-style: none;
+    flex-flow: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul>li{
+    margin: 5px 5px;
+}
+
+li>a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 2vw;
+}
