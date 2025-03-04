@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Responsive Navbar</h1>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./static/about.html">About</a></li>
-                    <li><a href="./static/projects.html">Projects</a></li>
-                    <li><a href="./static/contact.html">Contact</a></li>
-                </ul>
+            <nav class="nav-container">
+                <div id="name"><h1>Responsive Nav Bar</h1></div>
+                <div id="nav-small-scr">
+                    <div class="logo"><h1>Responsive web Design</h1></div>
+                      <ul id="list" class="menu">
+                          <li><a href="#">Home</a></li>
+                             <li><a href="./static/about.html">About</a></li>
+                             <li><a href="./static/projects.html">Projects</a></li>
+                             <li><a href="./static/contact.html">Contact</a></li>
+                     </ul>
+                    <button id="toggle-btn" class="fas fa-bars"></button>
+                </div>
             </nav>
     </header>
-    <main>
+    <!-- <main>
         <section class="main-content">
-            <div class="quote">"The only way to do great work is to love what you do." — Steve Jobs</div>
+            <div id="quote">"The only way to do great work is to love what you do." — Steve Jobs</div>
         </section>
-    </main>
+    </main> -->
     <script src="main.js"></script>
 </body>
 

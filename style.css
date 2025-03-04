@@ -1,48 +1,81 @@
-:root{
-    --grey: rgb(102, 102, 102);
-    --lb: rgb(68, 68, 68);
-}
-
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 header{
-    box-shadow: 2px 1px 3px darkgrey;
+    border: 2px solid red;
+    height: 10vh;
+}
+
+.nav-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 8vh;
 }
 
-h1{
-    text-align: start;
-    flex-basis: 40%;
-    color: var(--lb);
-    font-size: 4vw;
-}
-
-@media screen and (max-width: 468px) {
-    nav{
-        
-    }
-}
-
-#navbar > ul{
-    list-style: none;
-    flex-flow: 60%;
+#list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    list-style: none;
 }
 
-ul>li{
-    margin: 5px 5px;
-}
 
-li>a{
+ul>li,a{
+    margin: 10px;
     text-decoration: none;
-    color: var(--grey);
-    font-size: 2vw;
+    color: black;
+    font-size: 1.1em;
+}
+
+#nav-small-scr{
+    display: flex;
+}
+
+.logo, #toggle-btn{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 468px){
+    #nav-small-scr{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 12px;
+    }
+
+    .logo{
+            font-size: 1.2em;
+            display: block;
+            font-size: 0.8em;
+    }
+
+    #toggle-btn{
+            display: block;
+            height: 4vh;
+            cursor: pointer;
+    }
+
+.show{
+    display: block;
+    border: 2px solid red;
+}
+
+#name{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 468px){
+    #name{
+        font-size: 0.9em;
+    }
+   
 }
